@@ -48,8 +48,11 @@ display(widgets.VBox([digit_input, recognize_btn, output]))
 
 recognize_btn.on_click(recognize_digit)
 
-from subprocess import check_output
-print(check_output(["/content/sample_data/sample_submission.csv"]).decode("utf8"))
+import pandas as pd
+
+df = pd.read_csv("/content/sample_data/sample_submission.csv")
+print(df.head())
+
 
 train = pd.read_csv('/content/sample_data/train.csv.zip')
 test = pd.read_csv('/content/sample_data/test.csv.zip')
