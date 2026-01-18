@@ -1,2 +1,2 @@
 # Mini-Project1
-Al ml based project
+AI ML based project
